@@ -1,0 +1,54 @@
+window, page, dialog, wizard {
+	font-size: 13px;
+}
+
+/* Back button */
+:root:not([uidensity=compact]) #back-button > .toolbarbutton-icon {
+	background-color: unset !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+:root:not([uidensity=compact]) #back-button:hover > .toolbarbutton-icon {
+	border: none !important;
+	box-shadow: none !important;
+	background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+/* Hide stripe on top of tabs */
+.tab-line {
+  opacity: 0 !important;
+}
+
+/* Navbar */
+#nav-bar {
+	box-shadow: 0 0px 3px rgba(0,0,0,0.2) !important;
+}
+
+/* URL bar */
+#urlbar, .searchbar-textbox {
+	border-radius: 0 !important;
+	border-width: 1.5px !important;
+	box-shadow: none !important;
+}
+#urlbar:hover, .searchbar-textbox:hover {
+	box-shadow: none !important;
+}
+
+/* Light theme colors */
+:root {
+	--toolbar-field-focus-border-color: #aaa !important;
+}
+:root:-moz-lwtheme {
+	--toolbar-bgcolor: #f2f2f2 !important;
+	--toolbar-color: #000 !important;
+}
+.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+.tabbrowser-tab:-moz-lwtheme {
+	color:#000 !important;
+	border:none !important;
+}
+#navigator-toolbox:-moz-lwtheme {
+	background-color:#ccc;
+}
